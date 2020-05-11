@@ -1,0 +1,23 @@
+.search-container {
+  margin: 75px 0;
+  display: flex;
+  justify-content: center;
+}
+.search-container label {
+  margin-right: 5px;
+}
+.filter-box {
+  display: flex;
+}
+.results-container {
+  margin-top: 5%;
+  overflow-y: auto;
+  max-height: 75vh;
+}
+.language-element {
+  margin-left: 5px;
+  background-color: #2233ee;
+  color: #ffffff;
+  padding: 3px;
+  border-radius: 5px;
+}

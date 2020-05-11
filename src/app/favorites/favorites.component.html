@@ -1,0 +1,11 @@
+<div class="home-page-container" *ngIf="isAuth">
+  <div class="results-container">
+    <h3>
+      Projects
+
+    </h3>
+    <ng-container *ngFor="let project of repos; let i=index;">
+      <project-element [project]="project" [route]="currentRoute" (removedProject)="removeElement(project.id)"></project-element>
+    </ng-container>
+  </div>
+</div>

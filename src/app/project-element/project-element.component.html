@@ -1,0 +1,42 @@
+<div class="project-box">
+  <div class="project-avatar">
+    <img class="avatar" src="{{project.owner.avatar_url}}">
+  </div>
+  <div class="project-info">
+    <div class="project-name">
+      <div>
+        {{project.name}}
+      </div>
+      <div class="favorite-button-box" (click)="addFavorite()" *ngIf="!isFavoriteRoute">
+        <img class="favorite-button" src="{{icon}}">
+      </div>
+      <div class="favorite-button-box remove" (click)="removeFavorite()" *ngIf="isFavoriteRoute">
+        <img class="favorite-button" src="{{icon}}">
+      </div>
+    </div>
+    <div class="project-details-box">
+
+      <div class="project-details">
+        <div>
+          <div class="project-details-label">Language</div>
+          {{project.language}}
+        </div>
+        <div>
+          <div class="project-details-label">Stars</div>
+          {{project.stargazers_count}}
+
+        </div>
+      </div>
+      <div class="project-download">
+        <div class="project-details-label">Download link</div>
+        <a href="{{project.svn_url}}" target="_blank" class="project-link">{{project.svn_url}}</a>
+      </div>
+      <div class="project-description">
+        <div class="project-details-label">Description</div>
+        {{project.description}}
+
+      </div>
+    </div>
+  </div>
+
+</div>

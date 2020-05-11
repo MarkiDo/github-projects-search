@@ -1,0 +1,43 @@
+.favorite-button {
+  width: 15px;
+  height: 15px;
+}
+.favorite-button-box {
+  margin-left: 5px;
+}
+.remove {
+  transform: rotate(45deg);
+}
+.project-box {
+  display: flex;
+  margin-top: 5%;
+}
+.project-details-box {
+  border: 1px solid #cccccc;
+}
+.project-info {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.project-name {
+  font-size: 24px;
+  font-weight: 600;
+  display: flex;
+}
+.project-details {
+  display: flex;
+  justify-content: space-between;
+}
+.project-details-label {
+  font-size: 18px;
+  font-weight: 600;
+}
+.project-link {
+  color: unset;
+}
+.avatar {
+  width: 70px;
+  height: 70px;
+}

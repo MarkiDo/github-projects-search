@@ -1,0 +1,5 @@
+<div class="link-box">
+  <div *ngFor="let route of routes" [routerLink]="route.url" class="link" [ngClass]="{'link-active': route.isActive}">
+    {{route.url| uppercase}}
+  </div>
+</div>

@@ -1,0 +1,6 @@
+<div class="password-container">
+  <label >Password: </label>
+  <input  type="text" [formControl]="passwordControl">
+  <button (click)="login()" [disabled]="passwordControl.invalid">Login</button>
+</div>
+<button (click)="close()">Close</button>

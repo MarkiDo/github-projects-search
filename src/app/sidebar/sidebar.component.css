@@ -1,0 +1,21 @@
+.link-box {
+  justify-content: space-evenly;
+  min-width: 150px;
+  padding-top: 50px;
+  color: white;
+}
+.link {
+  padding-top: 5px;
+  padding-left: 5px;
+  padding: 10px;
+}
+.link-active {
+  background-color: green;
+}
+.link:focus {
+  outline: none;
+  cursor: pointer;
+}
+.link:hover {
+  cursor: pointer;
+}
